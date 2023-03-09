@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', 'montserrat', sans-serif;
+}
+body{
+    background-color: #f8f8f8;;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    border: 1px solid black;
+    min-height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+header{
+    background-color: rgb(15, 15, 58);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .75em;
+}
+main{
+    padding: .75em;
+    color: rgb(15, 15, 58);
+}
+.icon{
+    background-color: white;
+    padding: .4em;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+.icon-edit{
+    font-size: 1.2rem;
+}
+.content-header{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;  
+    margin-bottom: .875em; 
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+.header-user-info{
+    display: flex;
+    align-items: center;
+}
+.header-user-info h3{
+    font-size: 1rem;
+}
+.user-info-image{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+.content-body{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.content-body-main{
+    width: 30%;
+    /* border: 1px solid black; */
+    padding: 0.5em;
+    background-color: #EDEFFE;
+    border-radius: 10px;
+    height: 200px;
+}
+.payment-info{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+.content-body-main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75em;
+}
+
+.monthly-select{
+    display: flex;
+    gap: .25rem;
+    align-items: center;
+    background-color: white;
+    box-shadow: 1px 2px rgb(228, 225, 225);
+    padding: .3em;
+}
+.increase-decrease{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+
+}
+.increase-decrease-primary{
+    color: rgb(8, 251, 8);
+}
+/* Typography */
+.payment-p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #d4d4d4;
+    margin-bottom: .5em;
+}
+.button{
+    padding: 5px;
+    display: flex;
+    gap: 1.5em;
+}
+.button .primary-btn{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    background-color: #001F3B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: montserrat;
+    transition: 0.2s;
+}
+.edit{
+    width: 125px;
+}
+.primary-btn:hover, .primary-btn:focus{
+    background: #fff;
+    color: #001F3B;
+    border: 1px solid #001F3B;
+    cursor: pointer;
+}
+/* .content-body-aside{
+    width: 60%;
+    border: 1px solid blue;
+    display: flex;
+    padding: 0.5em;
+    justify-content: space-evenly;
+}
+.card{
+    border: 1px solid black;
+    width: 40%;
+    padding: 0.5em;
+} */
+@media (max-width:590px){
+    .content-body{
+        flex-direction: column;
+    }
+    .content-body-main{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
