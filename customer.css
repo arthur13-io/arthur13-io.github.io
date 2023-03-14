@@ -32,6 +32,11 @@ main{
     padding: .75em;
     color: rgb(15, 15, 58);
 }
+h2{
+    color: #001F3B;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 .icon{
     background-color: white;
     padding: .4em;

@@ -44,7 +44,7 @@
                         <p class="payment-p">Total Payment</p>
                         <div class="payment-info">
                             <div>
-                                <h2>$12345</h2>
+                                <h2 id="paymentOutput"></h2>
                             </div>
                             <div class="increase-decrease">
                                 <h6>$123</h6>
@@ -177,7 +177,7 @@
                         <div class="modal-input">
                             <div class="single-input">
                                 <label for="payment">Total Payment</label>
-                                <input type="text" name="payment" required placeholder="Enter the total payment" id="payment"> 
+                                <input type="text" name="payment" required placeholder="Enter the total payment" id="paymentInput"> 
                                 <ion-icon name="cash-outline" class="input-icon"></ion-icon>
                             </div>
                             <div class="single-input">
@@ -208,7 +208,7 @@
                         </div>
                         <div class="modal-footer">
                             <div class="save">
-                                <button class="secondary-btn save" onclick="userInput(event)">Save</button>
+                                <button class="secondary-btn"  id="save" onclick="changePayment()">Save</button>
                             </div>
                             <div class="save">
                                 <button class="secondary-btn delete">Delete</button>
