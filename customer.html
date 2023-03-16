@@ -63,7 +63,7 @@
                         <p class="payment-p">SUPPLIER COUNT</p>
                         <div class="payment-info">
                             <div>
-                                <h2>$12345</h2>
+                                <h2 id="supplierOutput"></h2>
                             </div>
                             <div class="increase-decrease">
                                 <h6>$123</h6>
@@ -83,7 +83,7 @@
                         <p class="payment-p">AMOUNT</p>
                         <div class="payment-info">
                             <div>
-                                <h2>$12345</h2>
+                                <h2 id="amountOutput"></h2>
                             </div>
                             <div class="increase-decrease">
                                 <h6>$123</h6>
@@ -105,7 +105,7 @@
                         <p class="payment-p">QUANTITY</p>
                         <div class="payment-info">
                             <div>
-                                <h2>$12345</h2>
+                                <h2 id="quantityOutput"></h2>
                             </div>
                             <div class="increase-decrease">
                                 <h6>$123</h6>
@@ -174,7 +174,9 @@
                             <i class="fa fa-times"></i>
                         </div>
                     </div>
+                    <form> 
                         <div class="modal-input">
+                           <div class="controls">
                             <div class="single-input">
                                 <label for="payment">Total Payment</label>
                                 <input type="text" name="payment" required placeholder="Enter the total payment" id="paymentInput"> 
@@ -182,19 +184,20 @@
                             </div>
                             <div class="single-input">
                                 <label for="quantity">Quantity</label>
-                            <input type="number" name="quantity" required placeholder="Enter quantity">
+                            <input type="number" name="quantity" placeholder="Enter quantity" id="quantity">
                             <i class="fa fa-area-chart input-icon" aria-hidden="true" ></i>
                             </div>
                             <div class="single-input">
                                 <label for="singleBag">Amount per Bag</label>
-                                <input type="text" name="singleBag" placeholder="Enter amount">
+                                <input type="text" name="singleBag" placeholder="Enter amount" id="amount">
                                 <ion-icon name="wallet-outline" class="icon-edit input-icon"></ion-icon>
                             </div>
                             <div class="single-input">
                                 <label type="supply">Supply</label>
-                                <input type="text" name="supply" required placeholder="Enter supplier details">
+                                <input type="text" name="supply" placeholder="Enter supplier details" id="supply">
                             <ion-icon name="cart-outline" class="icon-edit input-icon"></ion-icon>
                             </div>
+                           </div>
                             <div class="single-input">
                                 <label type="credit">Credit</label>
                                 <input type="text" name="credit">
@@ -206,6 +209,7 @@
                                 <i class="fa fa-credit-card-alt input-icon"></i>
                             </div>
                         </div>
+
                         <div class="modal-footer">
                             <div class="save">
                                 <button class="secondary-btn"  id="save" onclick="changePayment()">Save</button>
@@ -214,6 +218,9 @@
                                 <button class="secondary-btn delete">Delete</button>
                             </div>
                         </div>
+                    </form>
+
+                        
                     </div>
                 </div>
 
