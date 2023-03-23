@@ -25,6 +25,7 @@ function changePayment(e){
         amount: document.getElementById('amount').value,
         supply: document.getElementById('supply').value
     }
+    
     paymentOutput.innerText = inputs.payment;
     supplierOutput.innerText = inputs.supply;
     amountOutput.innerText = inputs.amount;
