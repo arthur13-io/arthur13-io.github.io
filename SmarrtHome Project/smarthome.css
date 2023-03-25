@@ -319,7 +319,40 @@ header p{
     font-weight: 500;
     display: flex;
 }
-.answer{
+.faq-answer{
     margin-top: 1rem;
     display: none;
 }
+.faq.open{
+    border-color: var(--color-dark);
+    color: var(--color-dark);
+    box-shadow: 0 1rem 2rem var(--color-dark);
+    z-index: 1;
+
+}
+.faq.open .faq-answer{
+    display: block;
+}
+
+/*=============================Download==============================*/
+
+
+.downloadApp-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.downloadApp-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.downloadApp-content .cta{
+    justify-content: start;
+    margin-top: 2rem;
+}
+.downloadApp-image{
+    width: 72%;
+}
+
+/*=============================subscribe==============================*/
