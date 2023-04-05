@@ -1,0 +1,11 @@
+npm init -y:
+
+This creates a json file.
+
+npm i -D tailwindcss
+
+This installs tailwind css as a dev dependency and it shows in the json file
+
+npx tailwindcss init
+This initializes the tailwind configuration file.
+That is where our changes can be made.
